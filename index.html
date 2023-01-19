@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Speech synthesizer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="narrator">
+    <h4>Syntezator mowy</h4>
+    <textarea id="textarea">Tutaj wpisz tekst...</textarea>
+    <div class="options">
+        <label for="voice">Głos:</label>
+        <select id="voice"></select>
+        
+        <label for="volume">Głośność:</label>
+        <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+        
+        <label for="pitch">Ton:</label>
+        <input type="range" id="pitch" min="0" max="2" step="0.1" value="1">
+        
+        <label for="rate">Szybkość:</label>
+        <input type="range" id="rate" min="0" max="2" step="0.1" value="1">
+    </div>
+    <div class="buttons">
+        <button id="speak">Odczytaj tekst</button>
+        <button id="stop">Stop</button>
+    
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
